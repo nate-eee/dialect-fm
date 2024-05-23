@@ -24,6 +24,7 @@
             background-size: cover;
             color: white;
             text-align: center;
+            position: relative;
         }
 
         .overlay {
@@ -37,10 +38,11 @@
             font-size: 1.2em;
             line-height: 1.5em;
             margin: 0;
+            margin-top: 20px; /* Added margin for spacing */
         }
 
         .content {
-            margin-top: 5px;
+            margin-top: 20px;
         }
 
         .email {
@@ -51,6 +53,11 @@
             position: absolute;
             top: 20px;
             left: 20px;
+        }
+
+        .headline {
+            font-size: 2em;
+            margin-top: 10px;
         }
 
         @media (max-width: 768px) {
@@ -66,10 +73,16 @@
 
             p {
                 font-size: 1em;
+                margin-top: 10px; /* Added margin for spacing */
             }
 
             .email {
                 font-size: 1em;
+            }
+
+            .headline {
+                font-size: 1.5em;
+                margin-top: 10px;
             }
         }
     </style>
@@ -79,6 +92,7 @@
         <img src="Dialect logo.png" alt="Dialect Logo" width="120">
     </div>
     <div class="overlay">
+        <div class="headline">conviction²</div>
         <div class="content">
             <p>Dialect is a multidisciplinary research project. We aim to develop a theoretical framework to understand the conditions when collaborative human relationships lead to emergent outcomes, such as creativity, innovation, and novel "0 to 1" breakthroughs. In a world where digital intelligence is rapidly catching up with human intelligence, Dialect represents our conviction in humanity’s unique capability and role in the future. To join our research efforts, please contact <span class="email">nathan@dialect.fm</span>.</p>
         </div>
