@@ -19,7 +19,7 @@
             height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: flex-end;
+            align-items: center;
             background: url('Duomo.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
@@ -27,9 +27,9 @@
         }
 
         .overlay {
-            padding: 20px; /* Reduced padding */
+            padding: 20px;
             max-width: 800px;
-            margin: 20px;
+            margin: 10px;
             background: transparent;
         }
 
@@ -40,15 +40,44 @@
         }
 
         .content {
-            margin-top: 10px; /* Adjusted for better spacing */
+            margin-top: 5px;
         }
 
         .email {
-            font-size: 1.2em; /* Ensures the same font size as paragraph */
+            font-size: 1.2em;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                align-items: flex-start;
+                padding-top: 20px;
+            }
+
+            .overlay {
+                padding: 10px;
+                margin: 5px;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .email {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="logo">
+        <img src="Dialect logo.png" alt="Dialect Logo" width="120">
+    </div>
     <div class="overlay">
         <div class="content">
             <p>Dialect is a multidisciplinary research project. We aim to develop a theoretical framework to understand the conditions when collaborative human relationships lead to emergent outcomes, such as creativity, innovation, and novel "0 to 1" breakthroughs. In a world where digital intelligence is rapidly catching up with human intelligence, Dialect represents our conviction in humanity’s unique capability and role in the future. To join our research efforts, please contact <span class="email">nathan@dialect.fm</span>.</p>
