@@ -3,36 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon - Dialect.fm</title>
+    <title>Dialect</title>
     <style>
+        @font-face {
+            font-family: 'Graphik';
+            src: url('GraphikRegular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Graphik', Arial, sans-serif;
             height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: flex-end;
+            align-items: center;
             background: url('Duomo.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
             text-align: center;
         }
+
         .overlay {
             background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
+            padding: 40px;
             border-radius: 10px;
-            margin-bottom: 10%;
+            max-width: 800px;
+            margin: 20px;
         }
+
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+            margin: 0;
+        }
+
+        .email {
+            margin-top: 20px;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
     <div class="overlay">
-        <h1>Coming Soon</h1>
+        <h1>Dialect</h1>
+        <h2>conviction²</h2>
+        <p>Dialect is a multidisciplinary research project. We aim to create a theoretical framework for understanding the ideal conditions where collaborative human relationships lead to emergent outcomes, such as creativity, innovation, and novel "0 to 1" breakthroughs. In a world where digital intelligence is rapidly catching up with human intelligence, Dialect represents our conviction in humanity’s unique capability and role in the coming years. If you want to join our research efforts, please reach out to <span class="email">nathan@dialect.fm</span></p>
     </div>
 </body>
 </html>
