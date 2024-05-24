@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dialect</title>
+    <style>
+        @font-face {
+            font-family: 'Graphik';
+            src: url('GraphikRegular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Graphik', Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('Duomo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            position: relative;
+            flex-direction: column;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .navbar a {
+            margin-left: 20px;
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .overlay {
+            padding: 20px;
+            max-width: 800px;
+            margin: 10px;
+            background: transparent;
+            text-align: left;
+        }
+
+        .headline {
+            font-size: 2em;
+            margin-top: 60px;
+            padding-bottom: 25px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+            margin: 10px 0;
+        }
+
+        .content p + p {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                top: 10px;
+                right: 10px;
+            }
+
+            .navbar a {
+                margin-left: 10px;
+                font-size: 0.8em;
+            }
+
+            .logo {
+                top: 10px;
+                left: 10px;
+                width: 100px;
+            }
+
+            .overlay {
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .headline {
+                font-size: 1.5em;
+                margin-top: 40px;
+                padding-bottom: 25px;
+            }
+
+            p {
+                font-size: 1em;
+                margin: 5px 0;
+            }
+
+            .content p + p {
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="Dialect logo.png" alt="Dialect Logo" width="120">
+    </div>
+    <div class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="research.html">research</a>
+    </div>
+    <div class="overlay">
+        <div class="headline">About Dialect</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+        </div>
+    </div>
+</body>
+</html>
