@@ -25,6 +25,26 @@
             color: white;
             text-align: center;
             position: relative;
+            flex-direction: column;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .navbar a {
+            margin-left: 20px;
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
         }
 
         .overlay {
@@ -34,36 +54,32 @@
             background: transparent;
         }
 
+        .headline {
+            font-size: 2em;
+            margin-top: 60px;
+        }
+
         p {
             font-size: 1.2em;
             line-height: 1.5em;
-            margin: 0;
-            margin-top: 20px; /* Added margin for spacing */
-        }
-
-        .content {
-            margin-top: 20px;
-        }
-
-        .email {
-            font-size: 1.2em;
-        }
-
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-
-        .headline {
-            font-size: 2em;
-            margin-top: 20px; /* Added margin for spacing */
+            margin: 10px 0;
         }
 
         @media (max-width: 768px) {
-            body {
-                align-items: flex-start;
-                padding-top: 20px;
+            .navbar {
+                top: 10px;
+                right: 10px;
+            }
+
+            .navbar a {
+                margin-left: 10px;
+                font-size: 0.8em;
+            }
+
+            .logo {
+                top: 10px;
+                left: 10px;
+                width: 100px;
             }
 
             .overlay {
@@ -71,18 +87,14 @@
                 margin: 5px;
             }
 
-            p {
-                font-size: 1em;
-                margin-top: 10px; /* Added margin for spacing */
-            }
-
-            .email {
-                font-size: 1em;
-            }
-
             .headline {
                 font-size: 1.5em;
-                margin-top: 20px; /* Increased margin for better spacing */
+                margin-top: 40px;
+            }
+
+            p {
+                font-size: 1em;
+                margin: 5px 0;
             }
         }
     </style>
@@ -91,10 +103,17 @@
     <div class="logo">
         <img src="Dialect logo.png" alt="Dialect Logo" width="120">
     </div>
+    <div class="navbar">
+        <a href="#about">about</a>
+        <a href="#research">research</a>
+    </div>
     <div class="overlay">
-        <div class="headline">conviction²</div>
+        <div class="headline">Explorations in shared conviction²</div>
         <div class="content">
-            <p>Dialect is a multidisciplinary research project. We aim to develop a theoretical framework to understand the conditions when collaborative human relationships lead to emergent outcomes, such as creativity, innovation, and novel "0 to 1" breakthroughs. In a world where digital intelligence is rapidly catching up with human intelligence, Dialect represents our conviction in humanity’s unique capability and role in the future. To join our research efforts, please contact <span class="email">nathan@dialect.fm</span>.</p>
+            <p>In 2007, a few of us friends, fresh out of high school, moved into an old house in Tennessee. We were broke in cash but rich in imagination. We built a home recording studio and started writing and recording our own music. Armed with just the internet and shared conviction, we bootstrapped our own media business, owned solely by us. We’ve traveled the world, made the art we wanted, and amazingly, have been able to sustain the business and keep the lights on.</p>
+            <p>Fast-forward 17 years. We can’t unlearn our experience: the magic of co-creating a world with our friends. We caught lightning in a bottle once. Can we do it again? What about our friends? Our kids?</p>
+            <p>We know we’re not the only ones asking this question. Something is shifting: we’re collectively waking up from the fever dream of algorithm-optimized “content” creation, as isolated islands in a zero-sum game for attention. There’s a transition to multiplayer mode, the great multiplier that is shared conviction, a positive-sum world view.</p>
+            <p>Dialect is an exploration of this phenomenon. When 1 + 1 > 2.</p>
         </div>
     </div>
 </body>
